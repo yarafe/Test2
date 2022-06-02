@@ -1,11 +1,10 @@
-# Troubleshooting
+# Management Connection
 
-There are different components in the whole delivery chain
+There are different ways to access your FGT Vms.We can define here two approaches: 
 
-1. Azure Load Balancer
-2. Network Security Groups
-3. Standard Public IP
-4. FortiGate
+1. Instance level public ip: This is the default. 
+2. Private IP via VPN, ExpressRoute, jumphost (Azure Bastion, …)
+
 
 ## Azure Load Balancer
 
