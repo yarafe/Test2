@@ -6,12 +6,11 @@ There are different ways to access your FGT Vms.We can define here two approache
 2. Private IP via VPN, ExpressRoute, jumphost (Azure Bastion, …)
 
 
-## Azure Load Balancer
+## Is instance level public IP required on FGT mgmt port?
 
-The Azure Load Balancer comes in 2 different flavors/SKUs: Basic and Standard. Due to the requirements in this deployment Standard SKU Load Balancers are used in this setup.
-Microsoft provides extensive documentation on the Azure Load Balancer [here](https://docs.microsoft.com/en-us/azure/load-balancer/load-balancer-overview). Before deployment it is advised to verify the [different components and concepts](https://docs.microsoft.com/en-us/azure/load-balancer/components) of the Azure Load Balancer.
+We still need to have Public IP attached to instance For azure SDN connector to resolve dynamic objects and communications with fortiguard for licesnsing and firmware update.
 
-Once deployed and the traffic is somehow not flowing as expected the Azure Load Balancer, as it is in the data path, could be the source. Most of the issues seens with the Azure Load Balancer are regarding the health probes not responding. The current status of the health probes can be verified in the Azure Portal > Your Azure Load Balancer > Monitoring > Metrics > Metric - 'Health Probe Status'. The example taken from a test setup shows a health probe that stops responding around 5:30 PM.
+ Fortinet Communication Ports and Protocols [here](https://docs.fortinet.com/document/fortigate/7.2.0/fortios-ports/160067/outgoing-ports). 
 
 <p align="center">
   <img width="500px" src="../images/troubleshooting-loadbalancer.png">
