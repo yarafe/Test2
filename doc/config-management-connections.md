@@ -18,7 +18,13 @@ We still need to have Public IP attached to instance For azure SDN connector to 
 
 Microsoft provides additional troubleshooting steps on the Azure Load Balancer [here](https://docs.microsoft.com/en-us/azure/load-balancer/load-balancer-troubleshoot).
 
-## Network Security Groups (NSG)
+## How to secure the mgmt interface?
+
+# Instance level Public IP with NSG
+
+# Extra IP and rules via Public Load Balancer
+
+# Proxy configuration
 
 Microsoft provides access control lists (ACL) on Azure networking attaching to a subnet or a network interface of a virtual machine. Debugging is possible by writing logs to a Storage Account or Azure Log Analytics. More information can be found [here](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-nsg-manage-log)
 
