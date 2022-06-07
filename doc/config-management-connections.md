@@ -22,7 +22,7 @@ Fortinet Communication Ports and Protocols [here](https://docs.fortinet.com/docu
 You can remove public IPs from management interfaces and keep only Private IP on mgmt port4 for both FGTs. 
 You will be able to reach FGTs using additional Public IP attached to external load balancer following these steps:
 
- -Add additional management public IP to Frontend IP configuration in ELB.
+ - Add additional management public IP to Frontend IP configuration in ELB.
 
 <p align="center">
   <img width="500px" src="../images/additional-mgmt PIP-ELB.png">
@@ -34,7 +34,7 @@ You will be able to reach FGTs using additional Public IP attached to external l
   <img width="500px" src="../images/backendpools-mgmt-ELB.png">
 </p>
 
--Add outbound rule with new Public IP and mgmt pool.
+- Add outbound rule with new Public IP and mgmt pool.
 
 <p align="center">
   <img width="500px" src="../images/outbound-rule-mgmt-ELB.png">
