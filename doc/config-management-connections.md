@@ -42,8 +42,9 @@ You will be able to reach FGTs using additional Public IP attached to external l
 
 ### Proxy configuration
 FGT-Vm will be able to access internet only via web proxy. 
-You can find [here](https://docs.fortinet.com/document/flex-vm/1.0.0/deployment-guide/256339/injecting-flex-vm-license-via-web-proxy#Confirmi) the steps to configure web proxy in order to inject flex vm license.
+This can be done in the similar way for configuration web proxy to inject flex vm license.
 
+You can find [here](https://docs.fortinet.com/document/flex-vm/1.0.0/deployment-guide/256339/injecting-flex-vm-license-via-web-proxy#Confirmi) more dtails.
 
 Microsoft provides access control lists (ACL) on Azure networking attaching to a subnet or a network interface of a virtual machine. Debugging is possible by writing logs to a Storage Account or Azure Log Analytics. More information can be found [here](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-nsg-manage-log)
 
