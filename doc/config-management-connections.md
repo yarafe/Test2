@@ -10,19 +10,23 @@ There are different ways to access your FGT Vms.We can define here two approache
 
 We still need to have Public IP attached to instance For azure SDN connector to resolve dynamic objects and communications with fortiguard for licesnsing and firmware update.
 
- Fortinet Communication Ports and Protocols [here](https://docs.fortinet.com/document/fortigate/7.2.0/fortios-ports/160067/outgoing-ports). 
+Fortinet Communication Ports and Protocols [here](https://docs.fortinet.com/document/fortigate/7.2.0/fortios-ports/160067/outgoing-ports). 
 
-<p align="center">
-  <img width="500px" src="../images/troubleshooting-loadbalancer.png">
-</p>
-
-Microsoft provides additional troubleshooting steps on the Azure Load Balancer [here](https://docs.microsoft.com/en-us/azure/load-balancer/load-balancer-troubleshoot).
 
 ## How to secure the mgmt interface?
 
 ### Instance level Public IP with NSG
 
 ### Extra IP and rules via Public Load Balancer
+
+You can remove public IPs from management interfaces and keep only Private IP on mgmt port4 for both FGTs. 
+
+We should add additional management public IP to Frontend IP configuration in ELB.
+
+<p align="center">
+  <img width="500px" src="../images/additional-mgmt PIP-ELB.png">
+</p>
+
 
 ### Proxy configuration
 
