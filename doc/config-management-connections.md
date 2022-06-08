@@ -2,13 +2,13 @@
 
 There are different ways to access your FGT Vms. We can define here two approaches: 
 
-1. Instance level public ip: FGT-VM is reachable through PIP attached to managemnt port. This is the default method.  
+1. Instance level public IP: FGT-VM is reachable through PIP attached to managemnt port. This is the default method.  
 2. Private IP via VPN, ExpressRoute, jumphost (Azure Bastion, …)
 
 
 ## Is instance level public IP required on FGT mgmt port?
 
-FGT needs to have public IP related to mgmt port for azure SDN connector to resolve dynamic objects and communications with fortiguard for licesnsing and firmware update. 
+FGT needs to have public IP related to mgmt port for azure SDN connector to resolve dynamic objects and to have communications with fortiguard for licesnsing and firmware update. 
 
 Fortinet Communication Ports and Protocols [here](https://docs.fortinet.com/document/fortigate/7.2.0/fortios-ports/160067/outgoing-ports). 
 
