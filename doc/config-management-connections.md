@@ -1,6 +1,6 @@
 # Management Connection
 
-There are different ways to access your FGT Vms.We can define here two approaches: 
+There are different ways to access your FGT Vms. We can define here two approaches: 
 
 1. Instance level public ip: FGT-VM is reachable through PIP attached to managemnt port. This is the default method.  
 2. Private IP via VPN, ExpressRoute, jumphost (Azure Bastion, …)
