@@ -17,7 +17,7 @@ Fortinet Communication Ports and Protocols [here](https://docs.fortinet.com/docu
 
 Security can be done on mgmt port with one of the following approaches:
 
-### Instance level Public IP with NSG
+### -Instance level Public IP with NSG
 
 Inbound/outbound rules can be created within NSG associated to mgmt NIC. You can define on each rule src/dest type, port and action.
 Rules are processed in priority order; The lower the number, the highest the priority.
@@ -26,7 +26,7 @@ Rules are processed in priority order; The lower the number, the highest the pri
   <img width="500px" src="../images/outbound-rule-nsg.png">
 </p>
 
-### Extra IP and rules via Public Load Balancer
+### -Extra IP and rules via Public Load Balancer
 
 You can remove public IPs from management interfaces and keep only Private IP on mgmt port4 for both FGTs. 
 You will be able to reach FGTs using additional Public IP attached to external load balancer following these steps:
@@ -49,7 +49,7 @@ You will be able to reach FGTs using additional Public IP attached to external l
   <img width="500px" src="../images/outbound-rule-mgmt-ELB.png">
 </p>
 
-### Proxy configuration
+### -Proxy configuration
 FGT-Vm will be able to access internet only via web proxy. 
 This can be done in the similar way for configuration web proxy to inject flex vm license.
 
