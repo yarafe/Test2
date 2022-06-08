@@ -22,6 +22,10 @@ Security can be done on mgmt port with one of the following approaches:
 Inbound/outbound rules can be created within NSG associated to mgmt NIC. You can define on each rule src/dest type, port and action.
 Rules are processed in priority order; The lower the number, the highest the priority.
 
+<p align="center">
+  <img width="500px" src="../images/outbound-rule-nsg.png">
+</p>
+
 ### Extra IP and rules via Public Load Balancer
 
 You can remove public IPs from management interfaces and keep only Private IP on mgmt port4 for both FGTs. 
