@@ -19,7 +19,8 @@ Security can be done on mgmt port with one of the following approaches:
 
 ### -Instance level Public IP with NSG
 
-FGT has public IP directly associated to mgmt Port.
+FGT has public IP directly attached to mgmt Port.
+
 Inbound/outbound rules can be created within NSG associated to mgmt NIC. You can define on each rule src/dest type, port and action.
 Rules are processed in priority order; The lower the number, the highest the priority.
 
